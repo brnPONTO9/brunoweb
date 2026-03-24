@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bruno Lopes | Full Stack Developer</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="shortcut icon" href="assets/img/codificacao.webp" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<canvas id="bgCanvas"></canvas>
+<div class="grid-overlay"></div>
+<div class="noise"></div>
+<div class="scanline"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero" onclick="closeMenu()">BRUNO<span>.</span>DEV</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" onclick="closeMenu()">Sobre</a></li>
+    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#services" onclick="closeMenu()">Serviços</a></li>
+    <li><a href="#why" onclick="closeMenu()">Por quê eu?</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contato</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Disponível para projetos</div>
+    <h1 class="hero-name">
+      <span class="first">BRUNO</span>
+      <span class="last">LOPES</span>
+    </h1>
+    <p class="hero-title">Full Stack Developer</p>
+    <p class="hero-desc">
+      Transformo <strong>ideias em código</strong>, código em <strong>experiências</strong>.<br>
+      Do back-end robusto ao front-end que impressiona — entrego soluções completas que <strong>fazem seu negócio crescer</strong>.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 3.6A10.8 10.8 0 0 0 2.4 17.3L1 23l5.9-1.4a10.8 10.8 0 1 0 13.5-18z"/></svg>
+        Contratar Agora
+      </a>
+      <a href="#skills" class="btn-secondary">
+        Ver Habilidades →
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span class="scroll-text">scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-tag">// 001 — quem sou eu</span>
+    <h2 class="section-title">Sobre <span>Mim</span></h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-avatar-wrap">
+        <div class="about-orbits">
+          <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-2"><div class="orbit-dot-2"></div></div>
+        </div>
+        <div class="avatar-hex">
+          <div class="avatar-inner"><img src="assets/img/loopes.webp" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-content reveal">
+      <h3 class="about-headline">
+        Um desenvolvedor que <span>não para de evoluir</span>
+      </h3>
+      <p class="about-text">
+        Sou <strong>Bruno Lopes</strong>, Desenvolvedor Full Stack Junior com sede por aprendizado e paixão por criar. Acredito que <strong>cada linha de código é uma oportunidade</strong> de mudar a experiência de alguém no mundo digital.
+      </p>
+      <p class="about-text">
+        Trabalho com tecnologias modernas tanto no front-end quanto no back-end, sempre buscando as <strong>melhores práticas</strong> e soluções que realmente fazem a diferença. Pra mim, código bom é código que resolve problemas reais.
+      </p>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Tecnologias</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Dedicação</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Evolução</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-tag">// 002 — stack tecnológico</span>
+    <h2 class="section-title">Minhas <span>Skills</span></h2>
+  </div>
+  <div class="skills-grid">
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">
+        <svg viewBox="0 0 452 520" xmlns="http://www.w3.org/2000/svg" style="color:#e44d26">
+          <path fill="#e44d26" d="M41 460L0 0h452l-41 460-185 52z"/>
+          <path fill="#f16529" d="M226 472l149-41 35-394H226z"/>
+          <path fill="#ebebeb" d="M226 212h-75l-5-58h80V102H94l13 148h119zm0 151l-64-17-4-45h-56l8 87 116 32z"/>
+          <path fill="#fff" d="M226 212v52h70l-7 73-63 17v54l116-32 9-97 9-67zm0-110v52h137l4-52z"/>
+        </svg>
+      </div>
+      <div class="skill-name">HTML5</div>
+      <div class="skill-level"><div class="skill-bar" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">
+        <svg viewBox="0 0 452 520" xmlns="http://www.w3.org/2000/svg" style="color:#264de4">
+          <path fill="#264de4" d="M41 460L0 0h452l-41 460-185 52z"/>
+          <path fill="#2965f1" d="M226 472l149-41 35-394H226z"/>
+          <path fill="#ebebeb" d="M226 117v51H94l3 44h129v51H101l4 46 121 34v53L99 364l-12-136h52l7 73 80 22zm0 0"/>
+          <path fill="#fff" d="M226 117v51h130l-4 44H226v51h124l-5 46-119 34v53l115-32 14-144 5-103zm0 0"/>
+        </svg>
+      </div>
+      <div class="skill-name">CSS3</div>
+      <div class="skill-level"><div class="skill-bar" style="width:85%"></div></div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#61dafb"/><stop offset="100%" stop-color="#00bcd4"/></linearGradient></defs>
+          <circle cx="50" cy="50" r="10" fill="url(#rg)"/>
+          <ellipse cx="50" cy="50" rx="48" ry="18" fill="none" stroke="#61dafb" stroke-width="4"/>
+          <ellipse cx="50" cy="50" rx="48" ry="18" fill="none" stroke="#61dafb" stroke-width="4" transform="rotate(60 50 50)"/>
+          <ellipse cx="50" cy="50" rx="48" ry="18" fill="none" stroke="#61dafb" stroke-width="4" transform="rotate(120 50 50)"/>
+        </svg>
+      </div>
+      <div class="skill-name">React JS</div>
+      <div class="skill-level"><div class="skill-bar" style="width:80%"></div></div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="rng" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#61dafb"/><stop offset="100%" stop-color="#00b4d8"/></linearGradient></defs>
+          <rect x="8" y="8" width="84" height="84" rx="18" fill="#1a1a2e" stroke="#61dafb" stroke-width="3"/>
+          <circle cx="50" cy="50" r="9" fill="url(#rng)"/>
+          <ellipse cx="50" cy="50" rx="44" ry="15" fill="none" stroke="#61dafb" stroke-width="3"/>
+          <ellipse cx="50" cy="50" rx="44" ry="15" fill="none" stroke="#61dafb" stroke-width="3" transform="rotate(60 50 50)"/>
+          <ellipse cx="50" cy="50" rx="44" ry="15" fill="none" stroke="#61dafb" stroke-width="3" transform="rotate(120 50 50)"/>
+          <text x="50" y="94" font-size="9" fill="#61dafb" text-anchor="middle" font-family="monospace" font-weight="bold">NATIVE</text>
+        </svg>
+      </div>
+      <div class="skill-name">React Native</div>
+      <div class="skill-level"><div class="skill-bar" style="width:75%"></div></div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="12" fill="#777bb4"/>
+          <text x="50" y="68" font-size="52" fill="white" text-anchor="middle" font-family="sans-serif" font-weight="bold">P</text>
+        </svg>
+      </div>
+      <div class="skill-name">PHP</div>
+      <div class="skill-level"><div class="skill-bar" style="width:78%"></div></div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="12" fill="#00618a"/>
+          <text x="50" y="55" font-size="13" fill="white" text-anchor="middle" font-family="sans-serif" font-weight="bold">MySQL</text>
+          <rect x="15" y="62" width="70" height="6" rx="3" fill="white" opacity="0.3"/>
+          <rect x="15" y="73" width="55" height="6" rx="3" fill="white" opacity="0.2"/>
+        </svg>
+      </div>
+      <div class="skill-name">MySQL</div>
+      <div class="skill-level"><div class="skill-bar" style="width:82%"></div></div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="12" fill="#f0803c"/>
+          <text x="50" y="42" font-size="11" fill="white" text-anchor="middle" font-family="sans-serif" font-weight="bold">XAMPP</text>
+          <circle cx="30" cy="65" r="14" fill="white" opacity="0.2"/>
+          <circle cx="50" cy="65" r="14" fill="white" opacity="0.2"/>
+          <circle cx="70" cy="65" r="14" fill="white" opacity="0.2"/>
+        </svg>
+      </div>
+      <div class="skill-name">XAMPP</div>
+      <div class="skill-level"><div class="skill-bar" style="width:80%"></div></div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3c873a"/><stop offset="100%" stop-color="#68a063"/></linearGradient></defs>
+          <rect width="100" height="100" rx="12" fill="url(#ng)"/>
+          <text x="50" y="62" font-size="46" fill="white" text-anchor="middle" font-family="monospace" font-weight="900">N</text>
+        </svg>
+      </div>
+      <div class="skill-name">Node.js</div>
+      <div class="skill-level"><div class="skill-bar" style="width:77%"></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header reveal">
+    <span class="section-tag">// 003 — o que entrego</span>
+    <h2 class="section-title">Meus <span>Serviços</span></h2>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card reveal">
+      <span class="service-num">01</span>
+      <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a15 15 0 0 1 0 18"></path><path d="M12 3a15 15 0 0 0 0 18"></path></svg></span>
+      <h3 class="service-title">Desenvolvimento Web</h3>
+      <p class="service-desc">Sites e sistemas web completos com HTML5, CSS3, React e PHP. Interfaces modernas, responsivas e com performance otimizada que impressionam seus usuários.</p>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-num">02</span>
+      <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"></rect><path d="M11 18h2"></path></svg></span>
+      <h3 class="service-title">Apps Mobile</h3>
+      <p class="service-desc">Aplicativos iOS e Android com React Native. Um único código, duas plataformas — economia real de tempo e dinheiro sem abrir mão da qualidade.</p>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-num">03</span>
+      <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v5"></path><path d="M12 17v5"></path><path d="M4.9 4.9l3.5 3.5"></path><path d="M15.6 15.6l3.5 3.5"></path><path d="M2 12h5"></path><path d="M17 12h5"></path><path d="M4.9 19.1l3.5-3.5"></path><path d="M15.6 8.4l3.5-3.5"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+      <h3 class="service-title">Back-end & APIs</h3>
+      <p class="service-desc">Servidor sólido com Node.js e PHP, banco de dados MySQL otimizado. Arquitecto sistemas escaláveis e seguros para sustentar o crescimento do seu negócio.</p>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-num">04</span>
+      <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="7" ry="3"></ellipse><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"></path><path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path></svg></span>
+      <h3 class="service-title">Banco de Dados</h3>
+      <p class="service-desc">Modelagem, criação e otimização de bancos de dados MySQL. Queries eficientes, estrutura limpa e dados organizados para decisões mais inteligentes.</p>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-num">05</span>
+      <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 1 0-7l1.5-1.5a5 5 0 1 1 7 7L17 13"></path><path d="M14 11a5 5 0 0 1 0 7L12.5 19.5a5 5 0 1 1-7-7L7 11"></path></svg></span>
+      <h3 class="service-title">Integração de Sistemas</h3>
+      <p class="service-desc">Conectando front-end ao back-end com APIs REST bem projetadas. Integro serviços externos, sistemas legados e plataformas para criar um ecossistema funcional.</p>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card reveal">
+      <span class="service-num">06</span>
+      <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"></path></svg></span>
+      <h3 class="service-title">Consultoria & Suporte</h3>
+      <p class="service-desc">Análise do seu projeto, escolha das tecnologias certas e suporte técnico contínuo. Acompanho seu projeto do início ao fim com transparência total.</p>
+      <div class="service-line"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY ME -->
+<section id="why">
+  <div class="section-header reveal">
+    <span class="section-tag">// 004 — por que me contratar</span>
+    <h2 class="section-title">Por que <span>Bruno?</span></h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"></path></svg></span>
+      <h4 class="why-title">Entrega Rápida</h4>
+      <p class="why-text">Prazo é coisa séria. Organizo cada projeto com metodologia clara e entrego no tempo combinado — sem surpresas, sem enrolação.</p>
+    </div>
+    <div class="why-card reveal">
+      <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"></path><path d="M9.5 12l1.5 1.5 3.5-3.5"></path></svg></span>
+      <h4 class="why-title">Código Limpo</h4>
+      <p class="why-text">Escrevo código legível, documentado e escalável. Seu projeto cresce sem virar uma bagunça. Manutenção fácil = mais dinheiro no bolso.</p>
+    </div>
+    <div class="why-card reveal">
+      <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 4v2"></path><path d="M20 12h-2"></path><path d="M12 20v-2"></path><path d="M4 12h2"></path></svg></span>
+      <h4 class="why-title">Foco no Resultado</h4>
+      <p class="why-text">Não vendo tecnologia, vendo solução. Cada decisão técnica é pensada para gerar resultado real para o seu negócio.</p>
+    </div>
+    <div class="why-card reveal">
+      <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H7l-3 3z"></path><path d="M8 9h8"></path><path d="M8 12h5"></path></svg></span>
+      <h4 class="why-title">Comunicação Total</h4>
+      <p class="why-text">Você sabe o que está acontecendo em tempo real. Atualizações frequentes, clareza total e disponibilidade para tirar dúvidas sempre.</p>
+    </div>
+    <div class="why-card reveal">
+      <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v4"></path><path d="M12 18v4"></path><path d="M4.93 4.93l2.83 2.83"></path><path d="M16.24 16.24l2.83 2.83"></path><path d="M2 12h4"></path><path d="M18 12h4"></path><path d="M4.93 19.07l2.83-2.83"></path><path d="M16.24 7.76l2.83-2.83"></path><circle cx="12" cy="12" r="4"></circle></svg></span>
+      <h4 class="why-title">Sede de Crescer</h4>
+      <p class="why-text">Cada projeto é uma chance de superar o último. Trago energia, motivação e aprendizado constante para tudo que coloco as mãos.</p>
+    </div>
+    <div class="why-card reveal">
+      <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"></path></svg></span>
+      <h4 class="why-title">Comprometimento</h4>
+      <p class="why-text">Quando assumo um projeto, assino embaixo. Me dedico 100% até a entrega final, tratando seu projeto como se fosse meu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-tag">// 005 — vamos trabalhar juntos</span>
+    <h2 class="section-title">Bora <span>Construir?</span></h2>
+  </div>
+  <div class="contact-wrap">
+    <p class="contact-lead reveal">
+      Tem um projeto em mente? Uma ideia esperando para virar realidade?<br>
+      <strong>Não espere o momento perfeito — construa ele.</strong><br>
+      Estou pronto para transformar sua visão em código que funciona, impressiona e entrega resultado.
+    </p>
+    <div class="contact-cards reveal">
+      <a href="mailto:brunosilva_2002@outlook.com" class="contact-card">
+        <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span>
+        <span class="contact-type">E-mail</span>
+        <span class="contact-value">brunosilva_2002@outlook.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/bruno-lopes-4a44b1367/" class="contact-card" target="_blank">
+        <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v6"></path><path d="M8 7h.01"></path><path d="M12 16v-3.5a2.5 2.5 0 0 1 5 0V16"></path><path d="M12 10v6"></path></svg></span>
+        <span class="contact-type">LinkedIn</span>
+        <span class="contact-value">/in/brunolopes</span>
+      </a>
+    </div>
+    <a href="https://wa.me/5511995967245?text=Olá%20Bruno!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." 
+       class="whatsapp-btn reveal" target="_blank">
+      <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Falar pelo WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">BRUNO LOPES</div>
+  <div class="footer-text">© 2025 — Feito com <span>dedicação</span> e muito café</div>
+  <div class="footer-text" style="font-size:0.7rem">Full Stack Developer</div>
+</footer>
+
+<script src="assets/js/index.js"></script>
+</body>
+</html>
